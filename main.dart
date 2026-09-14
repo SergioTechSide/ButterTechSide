@@ -1,17 +1,18 @@
-import 'package:flutter/material.dart';
+import 'package0:flutter/material.dart';
 
+// Função main(): ponto de entrada obrigatório da linguagem Dart
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
+  runApp(
+    const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: Center(child: Text('Hello, World!'))),
-    );
-  }
+      home: Scaffold(
+        body: Center(
+          child: Text(
+            'Hello, Dart! - Disciplina Desenvolvimento Mobile I',
+            style: TextStyle(fontSize: 18),
+          ),
+        ),
+      ),
+    ),
+  );
 }
